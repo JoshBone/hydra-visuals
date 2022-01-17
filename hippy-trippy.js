@@ -1,0 +1,5 @@
+osc(10, 0.9, ({time}) => Math.random() * (2))
+  .rotate(({time}) => Math.sin(time), 2)
+  .contrast(({time}) => Math.cos(time) * 20)
+  .kaleid(10)
+  .out()
